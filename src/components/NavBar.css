@@ -15,17 +15,14 @@
     margin: 0 1rem;
 }
 
-.navbar a:hover {
-
-    color: #33826A;
-}
-
 .navbar-links {
-
+    background-color: #4a8559;
+    border: none;
     margin-left: auto;
+    border-radius: 8px;
 }
 
-a {
+.navbar a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
 }
