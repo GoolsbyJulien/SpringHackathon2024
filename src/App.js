@@ -1,34 +1,19 @@
 import './App.css';
 import * as api from "./Api.js";
 import { useEffect, useState } from 'react';
+import CharityComponent from './components/CharityComponets';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 function App() {
+  useEffect(() => {
 
-
-
-  const [a, seta] = useState([]);
-
-  useEffect(
-    () => {
-      api.getCharity().then((res) => {
-        seta(res)
-        console.log(res);
-      });
-    }, []
-  );
-
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          {a.map((data) => {
 
-            return <div style={{ fontSize: 20 }}> {data.name} <div> {data.location}</div></div>
-          })} <code>src/App.js</code> and save to reload.
-        </p>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
 
-      </header>
-    </div>
-  );
+    </Routes>);
 }
 
 export default App;
