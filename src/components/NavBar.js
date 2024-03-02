@@ -8,17 +8,16 @@ function Navbar() {
     return (
 
         <nav className="navbar">
+            <Link to="/">
                 <img src={Logo} alt="logo" style={{ width: 150 }} />
-
+            </Link>
             <ul className="navbar-links">
 
 
-                <li ><Link to="/home">Home </Link></li>
-
-                <li><Link to="/balance">Restaurants </Link></li>
-
-                <li ><Link to="/loan">Charities</Link></li>
-                <li ><Link to="/resources">Resources</Link></li>
+                <li ><Link to="/Home">Home </Link></li>
+                <li><Link to="/Businesses">Businesses </Link></li>
+                <li ><Link to="/Charities">Charities</Link></li>
+                <li ><Link to="/Resources">Resources</Link></li>
 
 
             </ul>

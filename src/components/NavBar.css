@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     padding: 0.5rem 0rem;
-    background-color: rgb(32, 32, 32);
+    background-color: #e98300;
     color: black;
     box-shadow: 0 2px 2px 2px rgba(99, 99, 99, 0.23);
 }
