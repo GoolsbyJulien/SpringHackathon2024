@@ -4,29 +4,29 @@ import React from "react";
 const Charities = () => {
     return (
         <div>
-            <h1>Join Our Cause!</h1>
+            <h1 className="find">Join Our Cause!</h1>
             <div style={{ height: '100%' }}>
                     <div className="loan-form">
                     <form style={{ display: "block" }} onSubmit={null}>
-                            <div className="input-section">
-                                <label htmlFor="basis" step="0.01"> First Name:</label>
-                                <input id="basis" type="string"/>
+                            <div className="input-section" >
+                                <label htmlFor="basis" step="0.01">First Name:</label>
+                                <input id="basis" type="string" style={{marginLeft: "49px"}}/>
                             </div>
                             <div className="input-section">
                                 <label htmlFor="margin">Last Name:</label>
-                                <span> <input id="margin" type="string"/> </span>
+                                <input id="margin" type="string" style={{marginLeft: "50px"}}/>
                             </div>
                             <div className="input-section">
                                 <label htmlFor="margin">Phone:</label>
-                                <span> <input id="margin" type="string"/> </span>
+                                <input id="margin" type="string" style={{marginLeft: "96px"}}/>
                             </div>
                             <div className="input-section">
                                 <label htmlFor="margin">Email:</label>
-                                <span> <input id="margin" type="string"/> </span>
+                                <input id="margin" type="string" style={{marginLeft: "106px"}}/>
                             </div>
                             <div className="input-section">
                             <label for="identity">Are you a business, charity, or volunteer: </label> 
-                                <select name="identity" id="identity"> 
+                                <select name="identity" id="identity" style={{marginLeft: "10px"}}> 
                                     <option value="Business">Business</option> 
                                     <option value="Charity">Charity</option> 
                                     <option value="Volunteer">Volunteer</option> 
