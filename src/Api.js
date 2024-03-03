@@ -5,7 +5,7 @@ import { Charity } from "./wrappers/Charity"
 export const getCharity = async () => {
 
     let charities = []
-
+    let i = 0;
     var response = await fetch('https://data.mo.gov/resource/eb3y-vtsa.json', {
 
     })
@@ -21,7 +21,8 @@ export const getCharity = async () => {
 
             charitiesRes.forEach(a => {
 
-                let b = new Charity(a.agency_name, a.phone_number, a.location.human_address);
+                console.log(a);
+                let b = new Charity(a.agency_name, a.phone_number, a.location.human_address, a.county);
                 charities.push(b);
             });
             return charities;

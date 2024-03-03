@@ -10,7 +10,7 @@ function Navbar() {
 
         <nav className="navbar">
             <Link to="/">
-                <img src={Logo} alt="logo" style={{ width: 150 }} />
+                <img src={Logo} alt="logo" style={{ width: 100 }} />
             </Link>
             <h1>Show-Me Cupboard</h1>
             <ul className="navbar-links">
@@ -21,8 +21,8 @@ function Navbar() {
                     <Dropdown>
                         <Dropdown.Toggle variant='success' style={{color: "white", background: "#4a8559"}}>Businesses</Dropdown.Toggle>
                         <Dropdown.Menu >
-                            <Dropdown.Item as={Link} to="/">Find a Charity</Dropdown.Item>
-                            <Dropdown.Item as={Link} to="/Businesses">Businesses</Dropdown.Item>                            
+                            <Dropdown.Item as={Link} to="/" style={{background: "red"}}>Find a Charity</Dropdown.Item>
+                            <Dropdown.Item as={Link} to="/Businesses">Businesses</Dropdown.Item>
                             <Dropdown.Item>Tax Deduction Calculator</Dropdown.Item>
                             <Dropdown.Item>Why Donate?</Dropdown.Item>
                         </Dropdown.Menu>

@@ -3,33 +3,56 @@ import { useEffect, useState } from 'react';
 
 export default function SearchBar({ onChange }) {
 
-    const [isChecked, setIsChecked] = useState(false);
+    const [isZipChecked, setIsZipChecked] = useState(false);
+    const [isNameChecked, setIsNameZipChecked] = useState(true);
+    const [isCountyChecked, setIsCountyZipChecked] = useState(false);
 
-    const handleOnChange = () => {
-        setIsChecked(!isChecked);
+
+    const [searchType, setSearchType] = useState(0);
+    const checkZip = () => {
+
+        setIsZipChecked(true);
+        setIsNameZipChecked(false);
+        setIsCountyZipChecked(false);
+        setSearchType(1);
+
+    };
+
+    const checkCounty = () => {
+        setIsZipChecked(false);
+        setIsNameZipChecked(false);
+        setIsCountyZipChecked(true);
+        setSearchType(2);
+
+    };
+    const checkName = () => {
+
+        setIsZipChecked(false);
+        setIsNameZipChecked(true);
+        setIsCountyZipChecked(false);
+        setSearchType(0);
+
     };
     return (
         <div className={'SearchBar SearchBar'}>
 
-            
+
             <input
 
 
-                onChange={(e) => { onChange({ value: e.target.value, type: 0 }) }}
+                onChange={(e) => { onChange({ value: e.target.value, type: searchType }) }}
                 className='SearchBarInput'
 
-                placeholder={''}
+                placeholder={'Search For Charity'}
 
             />
 
 
             <div>
-                <LabeledCheckBox text={"Name"} handleOnChange={handleOnChange} isChecked={isChecked} />
-                <LabeledCheckBox text={"Time"} handleOnChange={handleOnChange} isChecked={isChecked} />
+                <LabeledCheckBox text={"Name"} handleOnChange={checkName} isChecked={isNameChecked} />
 
-                <LabeledCheckBox text={"Zip"} handleOnChange={handleOnChange} isChecked={isChecked} />
-                <LabeledCheckBox text={"County"} handleOnChange={handleOnChange} isChecked={isChecked} />
-                <LabeledCheckBox text={"Name"} handleOnChange={handleOnChange} isChecked={isChecked} />
+                <LabeledCheckBox text={"Zip"} handleOnChange={checkZip} isChecked={isZipChecked} />
+                <LabeledCheckBox text={"County"} handleOnChange={checkCounty} isChecked={isCountyChecked} />
 
             </div>
         </div>
