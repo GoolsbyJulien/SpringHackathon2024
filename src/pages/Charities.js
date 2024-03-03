@@ -1,4 +1,4 @@
-import "./Businesses.css";
+import "./Charities.css";
 import React from "react";
 
 const Charities = () => {
