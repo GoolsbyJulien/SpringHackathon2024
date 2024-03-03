@@ -26,11 +26,8 @@ const Charities = () => {
                         <form style={{ display: "block" }} onSubmit={handleSubmit}>
                             <div className="input-section">
                                 <label htmlFor="basis" step="0.01"> Tax Basis:</label>
-                                <input id="basis" type="number" step="0.01" />
-                            </div>
-
-                            <div className="input-section">
-
+                                <input id="basis" type="number" step="0.01" style={{marginLeft: "204px"}}/>
+                                <br></br>
                                 <label htmlFor="margin">Expected Profit Margin:</label>
                                 <span> <input id="margin" type="number" step="0.01" /> </span>
                             </div>
