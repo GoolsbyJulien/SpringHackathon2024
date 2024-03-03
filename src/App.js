@@ -36,7 +36,7 @@ function App() {
 
       </div>
       <div class="footer">
-        <p>Contact Info Goes Here</p>
+        <p>Spring 2024 Hackathon Project brought to you by the UCM Mules: Julien Goolsby, Evan Perlinger, Eric Price and Cooper Purvis ©  </p>
       </div>
 
     </div>)
