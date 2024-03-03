@@ -14,6 +14,8 @@
 
 .loan-form input {
     margin: 10px 40px;
+    float: right;
+
 }
 
 .loan-header {

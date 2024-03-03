@@ -12,6 +12,8 @@ function Navbar() {
             <Link to="/">
                 <img src={Logo} alt="logo" style={{ width: 100 }} />
             </Link>
+
+            
             <h1>Show-Me Cupboard</h1>
             <ul className="navbar-links">
 
