@@ -14,6 +14,7 @@ export default function HomePage() {
 
     const updateSearch = (search) => {
 
+
         setSearch(search);
         console.log(search.type);
 
@@ -22,6 +23,10 @@ export default function HomePage() {
     useEffect(
         () => {
             api.getCharity().then((res) => {
+
+                if (search.value == "") {
+                    search.value = "-1";
+                }
                 const searchType = search.type;
                 if (searchType == 0)
                     res = searchByName(res, search.value);

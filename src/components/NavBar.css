@@ -32,3 +32,6 @@
     color: white;
     margin: auto;
 }
+.btn-success{
+   border: none;
+}
