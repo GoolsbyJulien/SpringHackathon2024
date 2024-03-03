@@ -11,6 +11,12 @@
     margin: 50px 0;
 }
 
+.help {
+    vertical-align: text-top;
+    border-radius: 20px;
+    padding: 20px;
+}
+
 
 .loan-form input {
     margin: 10px 40px;

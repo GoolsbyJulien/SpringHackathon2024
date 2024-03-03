@@ -9,6 +9,7 @@ export class Charity {
         this.address = locationParse.address;
         this.city = locationParse.city;
         this.county = county;
+        this.state = locationParse.state;
         this.email = 'test@example.com'; // might webscrape this in future
         //logo img ?
     }

@@ -25,13 +25,27 @@
 
 .navbar a {
     text-decoration: none;
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
+}
+
+
+.navbar a:hover, .btn-success:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0) !important;
 }
 .navbar h1 {
     position: relative;
     color: white;
-    margin: auto;
+    margin: 0 5px;
+    transition: all 0.5s ease-in-out;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+
 }
-.btn-success{
-   border: none;
+
+
+
+
+.btn-success {
+    border: none;
 }

@@ -13,7 +13,7 @@ function CharityComponent(data) {
                     <h3>{charity.name} </h3>
 
                     <div className="hidden">
-                        Address:  {charity.address}, {charity.city}, {charity.zip}
+                        Address:  {charity.address}, {charity.city} {charity.state}, {charity.zip}
                     </div>
                     <div className="hidden">
                         Phone Number:  {charity.phone}

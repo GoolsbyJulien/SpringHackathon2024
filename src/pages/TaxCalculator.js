@@ -1,4 +1,4 @@
-import "./Charities.css";
+import "./TaxCalculator.css";
 import React from "react";
 import { useEffect, useState } from 'react';
 
@@ -17,13 +17,13 @@ const Charities = () => {
 
     return (
         <div>
-            <h1>Charities</h1>
-            <div style={{ minHeight: '100vh' }}>
+            <h1 className="find">Tax Deduction Estimator</h1>
+            <div style={{ minHeight: '50vh' }}>
 
 
                 <div style={{ height: '100%' }}>
                     <div className="loan-form">
-                    <form style={{ display: "block" }} onSubmit={handleSubmit}>
+                        <form style={{ display: "block" }} onSubmit={handleSubmit}>
                             <div className="input-section">
                                 <label htmlFor="basis" step="0.01"> Tax Basis:</label>
                                 <input id="basis" type="number" step="0.01" />
@@ -52,6 +52,27 @@ const Charities = () => {
 
                         </div>
                     </div>
+
+                </div>
+            </div>
+
+            <div style={{ textAlign: "center", marginTop: 80 }}>
+
+                <div className="help mission" style={{ fontSize: 15, width: "40%", display: "inline-block", background: "purple" }}>
+                    <h3>How to Find Tax Basis</h3>
+                    <p> the amount it cost to produce the food
+                        you donated. Smaller businesses that don’t use inventory tax
+                        accounting and aren’t required to capitalize indirect costs can
+                        generally use 25 percent of the fair market value of the donated food
+                        as their tax basis.
+                    Subtract your tax basis from the fair</p>
+
+                </div>
+                <div className="mission help" style={{ fontSize: 15, width: "40%", display: "inline-block", background: "purple" }}>
+                    <h3>How to Find Expected Profit Margin</h3>
+                    <p> Subtract your tax basis from the fair market value to find the
+                        amount of profit margin—meaning the profit you would have made
+                        from selling the food. </p>
 
                 </div>
             </div>
