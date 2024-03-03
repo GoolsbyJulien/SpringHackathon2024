@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import * as api from "./Api.js";
+import { useEffect, useState } from 'react';
+import CharityComponent from './components/CharityComponets';
+import { Routes, Route } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
+import HomePage from './pages/HomePage';
+import Home from './pages/Home';
+import TaxCalculator from './pages/TaxCalculator.js';
+import Charities from './pages/Charities';
+import Resources from './pages/Resources';
+import WhyDonate from './pages/WhyDonate';
+import Navbar from './components/NavBar';
 
-function App() {//
+function App() {
+  useEffect(() => {
+
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div >
+      <Navbar />
+
+      <div style={{minHeight : "83vh"}}>
+        <Routes >
+          <Route path="/search" element={<HomePage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/TaxCalculator" element={<TaxCalculator />} />
+          <Route path="/Charities" element={<Charities />} />
+          <Route path="/Resources" element={<Resources />} />
+          <Route path="/WhyDonate" element={<WhyDonate />} />
+        </Routes>
+
+      </div>
+      <div class="footer">
+        <p>Spring 2024 Hackathon Project brought to you by the UCM Mules: Julien Goolsby, Evan Perlinger, Eric Price and Cooper Purvis ©  </p>
+      </div>
+
+    </div>)
 }
 
 export default App;

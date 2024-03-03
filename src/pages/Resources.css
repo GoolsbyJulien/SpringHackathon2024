@@ -1,0 +1,8 @@
+.resource {
+    font-size: 2rem;
+    color: white;
+    background: red;
+    margin: 1% 10px;
+    text-align: center;
+    padding: 100px;
+}
