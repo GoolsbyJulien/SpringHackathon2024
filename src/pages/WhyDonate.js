@@ -5,7 +5,7 @@ const WhyDonate = () => {
     return (
         <div>
             <h1>Why Donate?</h1>
-            <p>Food Insecurity is more prevelant than you might think</p>
+            <p>Food Insecurity is more prevalent than you might think</p>
             <p>According to THIS 2019 STUDY</p>
             <a href="https://frac.org/research/resource-library/state-of-the-states-profiles?state=Missouri">Missouri FRAC</a>
             <a href="https://feedingmissouri.org/wp-content/uploads/2022/05/FAHH-2021-Key-Findings-Feeding-Missouri.pdf">Food Assistance and Hunger in the Heartland 2021, Key Findings</a>
@@ -15,4 +15,4 @@ const WhyDonate = () => {
     );
 };
 
-export default Businesses;
+export default WhyDonate;
