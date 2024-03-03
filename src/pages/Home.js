@@ -19,8 +19,8 @@ const Home = () => {
             <div className="mission" style={{background: "purple"}}>
                 <h2> Our App</h2>
                 <p>Our app is dedicated to keeping clean records of all participating charities by using state provided resources. 
-                    The API is offered by the <a href="https://data.mo.gov/Social-Services/Food-Pantry-List/eb3y-vtsa/about_data" target="_blank">State of Missouri Data Portal</a>
-                    and tracks all food pantries and help centers in the state. </p>
+                    The API is offered by the <a href="https://data.mo.gov/Social-Services/Food-Pantry-List/eb3y-vtsa/about_data" target="_blank">State of Missouri Data Portal </a>
+                     and tracks all food pantries and help centers in the state. </p>
             </div>
 
 
