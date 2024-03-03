@@ -16,19 +16,26 @@ function App() {
 
   }, []);
   return (
-    <div>
+    <div >
       <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Businesses" element={<Businesses />} />
-        <Route path="/Charities" element={<Charities />} />
-        <Route path="/Resources" element={<Resources />} />
+
+      <div style={{minHeight : "83vh"}}>
+        <Routes >
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Businesses" element={<Businesses />} />
+          <Route path="/Charities" element={<Charities />} />
+          <Route path="/Resources" element={<Resources />} />
 
 
 
 
-      </Routes>
+        </Routes>
+
+      </div>
+      <div class="footer">
+        <p>Contact Info Goes Here</p>
+      </div>
 
     </div>)
 }
