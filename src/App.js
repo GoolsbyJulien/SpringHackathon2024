@@ -10,8 +10,8 @@ import TaxCalculator from './pages/TaxCalculator.js';
 import Charities from './pages/Charities';
 import Resources from './pages/Resources';
 import WhyDonate from './pages/WhyDonate';
-
 import Navbar from './components/NavBar';
+
 function App() {
   useEffect(() => {
 
@@ -22,16 +22,12 @@ function App() {
 
       <div style={{minHeight : "83vh"}}>
         <Routes >
-          <Route path="/" element={<HomePage />} />
-          <Route path="/Home" element={<Home />} />
+          <Route path="/search" element={<HomePage />} />
+          <Route path="/" element={<Home />} />
           <Route path="/TaxCalculator" element={<TaxCalculator />} />
           <Route path="/Charities" element={<Charities />} />
           <Route path="/Resources" element={<Resources />} />
           <Route path="/WhyDonate" element={<WhyDonate />} />
-
-
-
-
         </Routes>
 
       </div>

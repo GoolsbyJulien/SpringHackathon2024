@@ -18,12 +18,12 @@ function Navbar() {
             <ul className="navbar-links">
 
 
-                <li ><Link to="/Home" style={{color: "white"}}>Home </Link></li>
+                <li ><Link to="/" style={{color: "white"}}>Home </Link></li>
+                <li ><Link to="/search" style={{color: "white"}}>Find a Charity </Link></li>
                 <li>
                     <Dropdown>
                         <Dropdown.Toggle variant='success' style={{color: "white", background: "#4a8559"}}>Businesses</Dropdown.Toggle>
                         <Dropdown.Menu >
-                            <Dropdown.Item as={Link} to="/">Find a Charity</Dropdown.Item>
                             <Dropdown.Item as={Link} to="/TaxCalculator">Tax Deduction Calculator</Dropdown.Item>
                             <Dropdown.Item as={Link} to="/WhyDonate">Why Donate?</Dropdown.Item>
                         </Dropdown.Menu>
