@@ -6,9 +6,10 @@ import { Routes, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from './pages/HomePage';
 import Home from './pages/Home';
-import Businesses from './pages/Businesses';
+import TaxCalculator from './pages/TaxCalculator.js';
 import Charities from './pages/Charities';
 import Resources from './pages/Resources';
+import WhyDonate from './pages/WhyDonate';
 
 import Navbar from './components/NavBar';
 function App() {
@@ -23,9 +24,10 @@ function App() {
         <Routes >
           <Route path="/" element={<HomePage />} />
           <Route path="/Home" element={<Home />} />
-          <Route path="/Businesses" element={<Businesses />} />
+          <Route path="/TaxCalculator" element={<TaxCalculator />} />
           <Route path="/Charities" element={<Charities />} />
           <Route path="/Resources" element={<Resources />} />
+          <Route path="/WhyDonate" element={<WhyDonate />} />
 
 
 

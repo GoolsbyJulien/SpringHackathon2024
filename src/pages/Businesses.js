@@ -4,9 +4,9 @@ import React from "react";
 const Businesses = () => {
     return (
         <div>
-            <h1>Businesses</h1>
-
+            <h1>Join Our Cause!</h1>
         </div>
+
 
     );
 };
